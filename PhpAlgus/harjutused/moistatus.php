@@ -49,6 +49,8 @@ $chars = "qwertyuashdihasviansdhfiasidf1234567890";
 $random_char = $chars[rand(0,strlen($chars)-2)];
 $newString = substr($string,0,$random_position).$random_char.substr($string,$random_position);
 echo $newString;
+echo "<br>";
+echo "<a href='vastus2.php'> Õige vastus</a>";
 
 
 
