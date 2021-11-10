@@ -41,7 +41,14 @@ echo "See linn on - ";
 $text = 'Narva';
 $count = strlen($text)-1;
 echo str_replace(array($text[0], $text[$count]), '*', $text);
-
+echo "<br>";
+echo "sõnal on üks lisatäht - ";
+$string = "Narva";
+$random_position = rand(0,strlen($string)-2);
+$chars = "qwertyuashdihasviansdhfiasidf1234567890";
+$random_char = $chars[rand(0,strlen($chars)-2)];
+$newString = substr($string,0,$random_position).$random_char.substr($string,$random_position);
+echo $newString;
 
 
 
